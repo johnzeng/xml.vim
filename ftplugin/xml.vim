@@ -1212,7 +1212,6 @@ en
 
 " mapKey()                         {{{1
 function! s:mapKey(mode, key, cmd)
-    echom "mapping mode ".a:mode." key:".a:key." to cmd:".a:cmd
   if maparg(a:key, a:mode) == ''
     execute a:mode . "noremap <silent> <buffer> " .
           \ a:key . " " .
